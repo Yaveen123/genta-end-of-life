@@ -1,0 +1,10 @@
+{
+  "name": "Genta",
+  "icons": [
+    {
+      "src": "images/icons/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

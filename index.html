@@ -1,1 +1,151 @@
-Genta has reached end of life.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Scripts -->
+    <!-- <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="{{url_for('static', filename='scripts/app/g-sign-in.js')}}"></script>
+    <script src="{{url_for('static', filename='scripts/app/DOM-main.js')}}" defer></script>
+    <script src="{{url_for('static', filename='scripts/app/data-manager.js')}}" defer></script>
+
+    <script src="{{url_for('static', filename='scripts/app/titlebar.js')}}"></script>
+    <script src="{{url_for('static', filename='scripts/app/confetti.js')}}"></script>
+    <script src="{{url_for('static', filename='scripts/app/textarea.js')}}"></script>
+    <script src="{{url_for('static', filename='scripts/app/todo.js')}}"></script>
+    <script src="{{url_for('static', filename='scripts/app/events.js')}}"></script>
+    <script src="{{url_for('static', filename='scripts/app/event-edit.js')}}"></script> -->
+
+    <!-- CDN -->
+    <!-- Canvas Confetti --> <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.1"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- Tab title -->
+    <title>Genta - Productivity for Individuals</title>
+    <meta name="description" content="Genta organises your projects, events, and todo lists in one seamless, beautiful and functional flow.">
+
+    <!-- Embeds -->
+    <meta name="twitter:title" content="Genta - Productivity for Individuals">
+    <meta name="twitter:description" content="Genta organises your projects, events, and todo lists in one seamless, beautiful and functional flow. It's project management, made for you, by people like you!">
+    <meta name="twitter:image" content="{{url_for('static', filename='images/meta-image.png')}}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Manifest and icon -->
+    <link rel="manifest" href="/static/manifest.json" />
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+
+</head>
+<body>
+    <!-- Sign out button at display: none to ensure GSI event listeners don't complain -->
+    <button id="signOutButton" style="display: none;">Sign out</button>
+
+    <!-- Main-body exists as it exists as a fixed width to center horizontally within the actual body -->
+    <div class="main-body" style="padding-top: 50px;">
+        <!-- Header -->
+        <div id="header" class="header unselectable">
+            <div id="header__inner-box" class="header__inner-box">
+                <!-- genta logo -->
+                <div style="display: flex; flex-direction: row; gap: 20px;">
+                    <img src="/static/images/genta-logo.svg" alt="Genta logo" width="60px" draggable="false">
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+
+
+
+    <div class="event-outer-box">
+        <div class="event">
+            <!-- Header section -->
+            <div class="event__header" style="height: fit-content;">
+                <div class="event__title-date-container" style="height: fit-content;">
+                    <p class="event__title-date-container__text typography__heading unselectable event-title-clickable" style="display:flex;">Genta has reached end of life</p>
+                    <p class="event__title-date-container__text typography__subtitle unselectable">A really big thank you!</p>
+                    
+                </div>
+                
+            </div>
+            <p class="typography__body">Honestly being my first ever deployed web app, I think I did pretty well! But I wouldn’t have been able to even fathom the idea of building something this large and complex without all the people around me. Specifically, I wanted to thank David, my ‘client’ who did a lot more than just being a client. He spent hours helping me work through the design and make a product that actually looked good.</p>
+            <p class="typography__body">I also want to thank a super skilled friend of mine, JC, and my software tutor, Mike, for guiding me through the complex AWS workflows and setting up things like nginx and gunicorn. Without them, I’d definitely be stuck crying for days on a single unexplained error, and Genta would have a thousand security problems. I also wanted to thank all of my beta testers for helping me see past my rose-tinted glasses, and my software engineering teacher Matt for pushing me to complete Genta.</p>
+        </div>
+    </div>    
+    <div class="event-outer-box" style="background:transparent">
+        <div class="event"  style="background:transparent">
+            <!-- Header section -->
+            <div class="event__header">
+                <div class="event__title-date-container">
+                    <p class="event__title-date-container__text typography__heading--light  unselectable event-title-clickable">About Genta</p>                    
+                </div>
+                
+            </div>
+        </div>
+    </div>   
+    <div class="event-outer-box">
+        <div class="event">
+            <p class="typography__body">Genta was a productivity tool for people who work on solo projects. Oftentimes, we'd much rather switch from our myriad of Google Docs files, todo lists, and scattered planners to a proper project management tool. But proper tools are typically way too complex and not what we need. So, Genta is built from the ground up to offer one centralised place for all your notes and todos!</p>
+            <p class="typography__body--light " style="margin-bottom: -10px">Genta is open source!</p>
+            <ul style="margin: 0px">
+                <li>
+                    <a href="https://github.com/yaveen123/genta-general" class="typography__body--clickable" target="_blank">Frontend Github repo</a>
+                </li>
+                <li>
+                    <a href="https://github.com/yaveen123/genta-api" class="typography__body--clickable" target="_blank">Backend Github repo</a>
+                </li>
+            </ul>
+            <p class="typography__body--light " style="margin-bottom: -10px">Those who helped me along the way!</p>
+            <ul style="margin: 0px">
+                <li>
+                    <p class="typography__body">Micheal Grassi, <span class="typography__body--light ">Technologist and HSC tutor   | </span> <a class="typography__body--clickable" href="https://www.linkedin.com/in/michael-g-426543122/?originalSubdomain=au" target="_blank">LinkedIn</a> | <a class="typography__body--clickable" href="https://miketeachestech.com/" target="_blank">Tutoring</a></p>
+                </li>
+                <li>
+                    <p class="typography__body">David Noè, <span class="typography__body--light ">UI/UX designer and full-stack dev | </span> <a class="typography__body--clickable" href="https://davidnoe.webflow.io/" target="_blank">Portfolio</a> | <a class="typography__body--clickable" href="https://dribbble.com/davidnoeee" target="_blank">Dribbble</a> | <a  class="typography__body--clickable" href="https://github.com/davidnoeee/" target="_blank">Github</a></p>
+                </li>
+                <li>
+                    <p class="typography__body">JC M., <span class="typography__body--light ">Really cool student </span></p>
+                </li>
+            </ul>
+            <p></p>
+            <p class="typography__body--light " style="margin-bottom: -10px;">Genta is my HSC Software Engineering major project</p>
+            <ul style="margin: 0px">
+                <li>
+                    <a href="https://archive.org/download/genta/The%20Software%20Engineering%20Project%20-%20Genta%20-%20BoS.pdf" class="typography__body--clickable" target="_blank">Genta development diary and report</a>
+                </li>
+                <li>
+                    <a href="https://curriculum.nsw.edu.au/learning-areas/tas/software-engineering-11-12-2022/overview" class="typography__body--clickable" target="_blank">HSC Software Engineering course overview</a>
+                </li>
+            </ul>
+            <p></p>
+            <p class="typography__body--light " style="margin-bottom: -10px">I'm Yav! Take a look at my other projects :)</p>
+            <ul style="margin: 0px">
+                <li>
+                    <a href="https://stopthescroll.net.au" class="typography__body--clickable" target="_blank">StopTheScroll, my digital media campaign!</a>
+                </li>
+                <li>
+                    <a href="https://github.com/yaveen123" class="typography__body--clickable" target="_blank">My GitHub</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>    
+        <div class="event-outer-box">
+        <div class="event">
+            <!-- <img src="/static/images/image 36.png" style="width:inherit">     -->
+             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700px" src="https://embed.figma.com/proto/aIUt47eDUzCca09PhDtelK/Genta---SEN-Major?page-id=0%3A1&node-id=301-1846&viewport=6090%2C-4212%2C0.4&scaling=contain&content-scaling=responsive&starting-point-node-id=301%3A1846&embed-host=share" allowfullscreen></iframe>
+        </div>
+    </div>  
+</body>
+</html>

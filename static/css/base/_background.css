@@ -1,0 +1,52 @@
+html {
+    height: 100%; /* Ensure the html element can be a reference for 100% height */
+    margin: 0; /* Remove default browser margins */
+    padding: 0; /* Remove default browser padding */
+}
+
+body {
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    /* Alternatively, if you've set html { height: 100%; }, you could use: */
+    /* min-height: 100%; */
+    margin: 0; /* Remove default browser margins from the body */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+    background: repeating-linear-gradient(
+        130deg, /* Angle of the stripes */
+        #FBFBF9, /* First colour */
+        #FBFBF9 8px, /* End of first colour */
+        #F5F4F2 8px, /* Start of second colour */
+        #F5F4F2 9px /* End of second colour */
+    );
+}
+
+.text-header{
+    color: #1E1D1A;
+    font-family: Satoshi;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Goldfield, V (2011) How to make HTML text unselectable https://stackoverflow.com/questions/2310734/how-to-make-html-text-unselectable  */
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* W3Schools (n.d.)  How TO - Change Text Selection Color https://www.w3schools.com/howto/howto_css_text_selection.asp*/
+::-moz-selection { /* Code for Firefox */
+    color: #000000;
+    background: #8ec600;
+}
+
+::selection {
+    color: #000000;
+    background: #8ec600;
+}
